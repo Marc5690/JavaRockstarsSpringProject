@@ -19,7 +19,7 @@ public class ProductRepositoryTest {
     private TestEntityManager _entityManager;
 
     @Autowired
-    private ProductRepository _products;
+    private ProductRepository _productRepository;
 
     @Test
     public void testFindByName() {
@@ -27,7 +27,7 @@ public class ProductRepositoryTest {
         _entityManager.persist(product);
         _entityManager.persist(new Product("Hat", new BigDecimal(15.00))); // Another product.
 
-        List<Product> findByName = _products.findByName(product.getName());
+        List<Product> findByName = _productRepository.findByName(product.getName());
 
         assertThat(findByName).extracting(Product::getName).containsOnly(product.getName());
         assertThat(findByName).extracting(Product::getPrice).contains(product.getPrice());
