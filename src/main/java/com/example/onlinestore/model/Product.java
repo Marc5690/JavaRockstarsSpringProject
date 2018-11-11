@@ -4,6 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
 import java.math.BigDecimal;
 
 @Entity
@@ -14,6 +17,14 @@ public class Product {
     private Long id;
     private String name;
     private BigDecimal price;
+    
+    @ManyToOne
+    @JoinColumn(name="basket_id")
+    private Basket basket;
+    
+    @ManyToOne
+    @JoinColumn(name="customer_id")
+    private Customer customerThatHasBoughtThisBook;
 
     protected Product() {}
 

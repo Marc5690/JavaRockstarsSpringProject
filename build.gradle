@@ -27,9 +27,13 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+    compile("org.springframework.boot:spring-boot-starter-batch")
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("com.h2database:h2")
+    compile("org.springframework.boot:spring-boot-configuration-processor")
+    //compile("org.hsqldb:hsqldb")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 

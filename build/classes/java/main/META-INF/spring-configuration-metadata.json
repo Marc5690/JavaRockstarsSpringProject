@@ -1,0 +1,19 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.example.onlinestore.fileio.StorageProperties",
+      "name": "storage",
+      "type": "com.example.onlinestore.fileio.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.example.onlinestore.fileio.StorageProperties",
+      "defaultValue": "upload-dir",
+      "name": "storage.location",
+      "description": "Folder location for storing files",
+      "type": "java.lang.String"
+    }
+  ]
+}
