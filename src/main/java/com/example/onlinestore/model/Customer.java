@@ -20,11 +20,11 @@ public class Customer {
     private String firstName;
 	private String lastName;
     
-    @OneToMany(mappedBy = "customerThatHasBoughtThisBook")
-    private List<Product> products;
+    //@OneToMany(mappedBy = "customerThatHasBoughtThisBook")
+    //private List<Product> products;
     
-    @OneToOne(mappedBy="customerOwner")
-    private Basket currentBasket;
+    //@OneToOne(mappedBy="customerOwner")
+    //private Basket currentBasket;
 
     public Customer() {}
 

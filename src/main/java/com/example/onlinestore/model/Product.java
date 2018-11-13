@@ -18,13 +18,13 @@ public class Product {
     private String name;
     private BigDecimal price;
     
-    @ManyToOne
-    @JoinColumn(name="basket_id")
-    private Basket basket;
+//    @ManyToOne
+//    @JoinColumn(name="basket_id")
+//    private Basket basket;
     
-    @ManyToOne
-    @JoinColumn(name="customer_id")
-    private Customer customerThatHasBoughtThisBook;
+//    @ManyToOne
+//    @JoinColumn(name="customer_id")
+//    private Customer customerThatHasBoughtThisBook;
 
     protected Product() {}
 

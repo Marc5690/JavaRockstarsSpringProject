@@ -22,6 +22,7 @@ import java.util.List;
 
 @SpringBootApplication
 @EnableConfigurationProperties(StorageProperties.class)
+@ComponentScan({"com.example.onlinestore"})
 public class Application {
 
 	private static final Logger log = LoggerFactory.getLogger(Application.class);
@@ -42,11 +43,11 @@ public class Application {
 	}
 	
 	 @Bean
-	    CommandLineRunner init(StorageService storageService) {
-	        return (args) -> {
-	            storageService.deleteAll();
-	            storageService.init();
-	        };
-	    }
+	 CommandLineRunner init(StorageService storageService) {
+	       return (args) -> {
+	           storageService.deleteAll();
+	           storageService.init();
+	       };
+	 }
 	
 }
