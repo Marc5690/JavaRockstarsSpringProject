@@ -1,7 +1,7 @@
 package com.example.onlinestore;
 
-import com.example.onlinestore.model.Product;
-import com.example.onlinestore.model.ProductRepository;
+import com.example.onlinestore.model.entities.Product;
+import com.example.onlinestore.model.repositories.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
